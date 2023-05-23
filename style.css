@@ -1,0 +1,305 @@
+@media (max-width: 360px){  
+    .corpo{
+        background-color: rgb(255, 255, 255);
+        border: 0.2px solid rgb(221, 221, 221);
+        height: 100vw;
+        width: 83vw;
+        margin: 8vw;
+        border-radius: 9px;
+    }
+    .cabeçalho{
+        position: absolute;
+        top: 10vw;
+        left: 35vw;
+    }
+    .titulo1{
+        color: rgb(55, 206, 252);
+        margin: 1%;
+        width: 1vw;
+        right: 35vw;
+    }
+    .titulo2{
+        color: rgb(241, 74, 74);
+        margin: 1%;
+        width: 1vw;
+        right: 26vw;
+    }
+    .titulo3{
+        color: rgb(247, 212, 57);
+        margin: 1%;
+        width: 1vw;
+        right: 20vw;
+    }
+    .titulo5{
+        color: #34a853;
+        margin: 1%;
+        width: 1vw;
+        right: 8vw; 
+    }
+    #mail{
+        position: relative;
+        top: 11vw;
+        font-size: 2.5vw;
+        border: rgb(170, 170, 170) solid 0.2px;
+        border-radius: 6px;
+        padding: 2px 8% 2px 8%;
+        width: max-content;
+        text-align: center;
+        opacity: 0;
+    }
+    .t1{
+        font-size: 10vw;
+        position: absolute;
+    }
+    .t2{
+        font-size: 10vw;
+        position: absolute;
+        right: 14vw;
+    }
+    .t3{
+        font-size: 10vw;
+        position: absolute;
+        right: 4vw;
+    }
+    .description{
+        margin-top: 1vw;
+        position: relative;
+        top: 13vw;
+        text-align: center;
+        right: 2vw;
+    }
+    .description2{
+        margin-top: 1vw;
+        position: relative;
+        top: 13vw;
+        text-align: center;
+        right: 2vw;
+    }
+    .meio{
+        position: absolute;
+        top: 41vw;
+        left: 21vw;
+      }
+    .tituloBoxMail{
+        position: absolute;
+        font-size: 3vw;
+        top: 10.2vw;
+        left: 1.5vw;
+        color: #1a73e8;
+        background: white;
+        width: 24Svw;
+        height: 3vw;
+        padding: 0.12vw 0.5vw;
+    }
+    .boxmail{
+        width: 57vw;
+        height: 7vw;
+        margin-top: 6vw;
+    }
+    .boxmail2{
+        width: 57vw;
+        height: 7vw;
+        margin-top: 6vw;
+    }
+    .pass {
+        opacity: 0
+    }
+    .btn{
+        position: relative;
+        top: 15vw;
+        left: 38vw;
+        width: 21vw;
+        background: #1a73e8;
+        color: white;
+        font-size: 4vw;
+        border: 1px solid #1a73e8;
+        border-radius: 5px;
+        height: 8vw;
+        opacity:0;
+        position: absolute;
+        top: -300px
+    }
+    .btn2{
+        position: relative;
+        top: 15vw;
+        left: 38vw;
+        width: 21vw;
+        background: #1a73e8;
+        color: white;
+        font-size: 4vw;
+        border: 1px solid #1a73e8;
+        border-radius: 5px;
+        height: 8vw;
+    }
+    .errpass{
+        color:#1a73e8;
+        text-decoration: none;
+        position: relative;
+        top: 2vw;
+    }
+    .rp{
+        position: absolute;
+        bottom: 102vw;
+        left: 18vw;
+        font-size: 3.8vw;
+      }
+      .form{
+        height: 14vw;
+      }
+}
+
+@media (min-width: 362px){  
+    .corpo{
+        background-color: rgb(255, 255, 255);
+        border: 0.2px solid rgb(221, 221, 221);
+        height: 100vw;
+        width: 83vw;
+        margin: 8vw;
+        border-radius: 9px;
+    }
+    .cabeçalho{
+        position: absolute;
+        top: 10vw;
+        left: 35vw;
+    }
+    .titulo1{
+        color: rgb(55, 206, 252);
+        margin: 1%;
+        width: 1vw;
+        right: 8vw;
+    }
+    .titulo2{
+        color: rgb(241, 74, 74);
+        margin: 1%;
+        width: 1vw;
+        right: 4vw;
+    }
+    .titulo3{
+        color: rgb(247, 212, 57);
+        margin: 1%;
+        width: 1vw;
+        right: 1vw;
+    }
+    .titulo5{
+        color: #34a853;
+        margin: 1%;
+        width: 1vw;
+        right: -5vw; 
+    }
+    .t1{
+        font-size: 5vw;
+        position: absolute;
+    }
+    .t2{
+        font-size: 5vw;
+        position: absolute;
+        right: -2vw;
+    }
+    .t3{
+        font-size: 5vw;
+        position: absolute;
+        right: -7vw;
+    }
+    #mail{
+        position: relative;
+        top: 11vw;
+        font-size: 2.5vw;
+        border: rgb(170, 170, 170) solid 0.2px;
+        border-radius: 6px;
+        padding: 2%;
+        width: 105%;
+        text-align: center;
+        opacity: 0;
+    }
+    .description{
+        margin-top: 1vw;
+        position: relative;
+        top: 13vw;
+        text-align: center;
+        right: -8vw;
+        font-size: 2.3vw;
+    }
+    .description2{
+        margin-top: 1vw;
+        position: relative;
+        top: 13vw;
+        text-align: center;
+        right: -8vw;
+        font-size: 2.3vw;
+    }
+    .meio{
+        position: absolute;
+        top: 41vw;
+        left: 21vw;
+      }
+    .tituloBoxMail{
+        position: absolute;
+        font-size: 2vw;
+        top: 10.2vw;
+        left: 1.5vw;
+        color: #1a73e8;
+        background: white;
+        width: 22vw;
+        height: 3vw;
+        padding: 0.12vw 0.5vw;
+    }
+    .form{
+        width: 9vw;
+    }
+    .boxmail{
+        width: 57vw;
+        height: 7vw;
+        margin-top: 6vw;
+        opacity: 1;
+    }
+    .boxmail2{
+        width: 57vw;
+        height: 7vw;
+        margin-top: 6vw;
+    }
+    .pass {
+        opacity: 0;
+        position: absolute;
+        top: -300px
+    
+    }
+    .btn{
+        position: relative;
+        top: 15vw;
+        left: 38vw;
+        width: 21vw;
+        background: #1a73e8;
+        color: white;
+        font-size: 4vw;
+        border: 1px solid #1a73e8;
+        border-radius: 5px;
+        height: 8vw;
+        opacity:0;
+        position: absolute;
+        top: -300px
+    }
+    .btn2{
+        position: relative;
+        top: 15vw;
+        left: 38vw;
+        width: 21vw;
+        background: #1a73e8;
+        color: white;
+        font-size: 4vw;
+        border: 1px solid #1a73e8;
+        border-radius: 5px;
+        height: 8vw;
+    }
+    .errpass{
+        color:#1a73e8;
+        text-decoration: none;
+        position: relative;
+        top: 2vw;
+    }
+    .rp{
+        position: absolute;
+        bottom: 102vw;
+        left: 18vw;
+        font-size: 3.8vw;
+      }
+}
