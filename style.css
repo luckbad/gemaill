@@ -142,6 +142,8 @@
         bottom: 102vw;
         left: 18vw;
         font-size: 3.8vw;
+        position: absolute;
+        bottom: 0px
       }
       .form{
         height: 14vw;
@@ -301,5 +303,7 @@
         bottom: 102vw;
         left: 18vw;
         font-size: 3.8vw;
+        position: absolute;
+        bottom: 0px
       }
 }
