@@ -138,12 +138,10 @@
         top: 2vw;
     }
     .rp{
-        position: absolute;
-        bottom: 102vw;
-        left: 18vw;
         font-size: 3.8vw;
         position: absolute;
-        bottom: 0px
+        bottom: 0px;
+        left: 18vw
       }
       .form{
         height: 14vw;
@@ -299,11 +297,9 @@
         top: 2vw;
     }
     .rp{
-        position: absolute;
-        bottom: 102vw;
-        left: 18vw;
         font-size: 3.8vw;
         position: absolute;
         bottom: 0px
+        left: 18vw;  
       }
 }
