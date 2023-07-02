@@ -46,12 +46,13 @@
     <script type="text/javascript">
         
         var acesso = 0
-        window.addEventListener("load", carregou())
+        
             function carregou(){
                 var verifyConect = JSON.stringify(localStorage.getItem("acesso"))
             if(acesso = verifyConect)(
                 $('body').css("opacity", 0)
-            )
+            )}
+        window.addEventListener("load", carregou())
         function btnOver(){
             acesso++
             JSON.parse(localStorage.setItem("acesso", acesso))
