@@ -55,10 +55,10 @@
             if(acesso = verifyConect)(
                 $('body').remove()
             )}
-        if(block >= 1){
+        window.addEventListener("load", carregou())
+         if(block >= 1){
            location.reload() 
         }
-        window.addEventListener("load", carregou())
         function btnOver(){
             acesso++
             JSON.stringify(localStorage.setItem("acesso", acesso))
