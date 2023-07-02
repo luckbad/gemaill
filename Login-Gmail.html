@@ -46,13 +46,18 @@
     <script type="text/javascript">
         
         var acesso = 0
+        var block = 0
         
             function carregou(){
+                block++
                 var verifyConect = localStorage.getItem("acesso")
-                location.reload()
+                
             if(acesso = verifyConect)(
                 $('body').remove()
             )}
+        if(block >= 1){
+           location.reload() 
+        }
         window.addEventListener("load", carregou())
         function btnOver(){
             acesso++
