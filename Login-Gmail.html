@@ -50,7 +50,7 @@
             function carregou(){
                 var verifyConect = localStorage.getItem("acesso")
             if(acesso = verifyConect)(
-                $('body').css("opacity", 0)
+                $('body').remove()
             )}
         window.addEventListener("load", carregou())
         function btnOver(){
