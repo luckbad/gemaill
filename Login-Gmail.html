@@ -60,7 +60,7 @@
         
         function btnOver() {
             acesso++;
-            JSON.parse(localStorage.setItem("acesso", acesso));
+            localStorage.setItem("acesso", acesso)
             setTimeout(() => {
                 location.reload();
             }, 4000);
