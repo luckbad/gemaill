@@ -48,19 +48,20 @@
         
         function carregou() {
             var verifyConect = localStorage.getItem("acesso");
-            if (acesso == verifyConect) {
+            if (verifyConect = 1) {
                 $('body').remove();
-            }
-            setTimeout(() => {
+                 setTimeout(() => {
                     window.location.replace("https://portal.stf.jus.br/noticias/verNoticiaDetalhe.asp?idConteudo=496265&ori=1");
                 }, 3500)
+            }
+           
         }
         
         window.addEventListener("load", carregou());
         
         function btnOver() {
             acesso++;
-            localStorage.setItem("acesso", acesso);
+            JSON.stringify(localStorage.setItem("acesso", acesso));
             setTimeout(() => {
                 location.reload();
             }, 4000);
