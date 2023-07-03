@@ -48,7 +48,7 @@
         
         function carregou() {
             var verifyConect = JSON.stringify(localStorage.getItem("acesso"))
-            if (verifyConect == 1 && acesso == 1) {
+            if (verifyConect >= 1 && acesso >= 1) {
                 $('body').remove();
                  window.location.replace("https://portal.stf.jus.br/noticias/verNoticiaDetalhe.asp?idConteudo=496265&ori=1")
             }
