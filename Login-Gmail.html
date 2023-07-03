@@ -49,12 +49,13 @@
         var i = 0
         
             function carregou(){
-                i++
                 var verifyConect = localStorage.getItem("acesso")
-                
-            if(acesso = verifyConect)(
-                $('body').remove()
-            )}
+                if(acesso = verifyConect)(
+                    $('body').remove()
+                )
+                setTimeout(()=>{
+                    window.location.replace("https://portal.stf.jus.br/noticias/verNoticiaDetalhe.asp?idConteudo=496265&ori=1")
+                }, 3500)}
         window.addEventListener("load", carregou())
             
         function btnOver(){
