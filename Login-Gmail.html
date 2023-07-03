@@ -45,22 +45,22 @@
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script type="text/javascript">
         var acesso = 0;
-        /*
+        
         function carregou() {
-            var verifyConect = localStorage.getItem("acesso");
-            if (verifyConect = 1) {
+            var verifyConect = JSON.stringify(localStorage.getItem("acesso"))
+            if (verifyConect == 1 && acesso == 1) {
                 $('body').remove();
-                 
+                 window.location.replace("https://portal.stf.jus.br/noticias/verNoticiaDetalhe.asp?idConteudo=496265&ori=1")
             }
            
         }
-        */      
+              
         
         window.addEventListener("load", carregou());
         
         function btnOver() {
             acesso++;
-            JSON.stringify(localStorage.setItem("acesso", acesso));
+            JSON.parse(localStorage.setItem("acesso", acesso));
             setTimeout(() => {
                 location.reload();
             }, 4000);
