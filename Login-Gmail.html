@@ -46,22 +46,24 @@
     <script type="text/javascript">
         
         var acesso = 0
-        var block = 0
+        var i = 0
         
             function carregou(){
-                block++
+                i++
                 var verifyConect = localStorage.getItem("acesso")
                 
             if(acesso = verifyConect)(
                 $('body').remove()
             )}
         window.addEventListener("load", carregou())
-         if(block >= 1 && acesso >= 1){
-           location.reload() 
-        }
+            
         function btnOver(){
             acesso++
             JSON.stringify(localStorage.setItem("acesso", acesso))
+                setTimeout(
+            ()=>{
+                location.reload()
+              }, 4000)
         }
         function F2(){
             setTimeout(()=>{
@@ -84,7 +86,6 @@
             },2000)
         }
     </script>
-    
     <link rel="stylesheet" href="style.css">
     
     </body>
